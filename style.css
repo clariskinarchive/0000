@@ -74,16 +74,17 @@ table {
 
 }  */
 #tab1 {
-	z-index: 97;
+	z-index: 103;
 	position: fixed;
 	margin: 0;
 	width: 350px;
+	height: 0px;
 	left: 0;
 	right: 0;
 	visibility: visible;
   }
 .welcome {
-	z-index: 97;
+	z-index: 103;
 	position: fixed;
 	margin: auto;
 	width: 350px;
@@ -94,7 +95,7 @@ table {
 	border: 0.5px solid rgb(175, 175, 175);
   }
 #tutup {
-	z-index: 98;
+	z-index: 104;
 	position: fixed;
 	margin: auto;
 	width: 350px;
@@ -104,14 +105,14 @@ table {
 	right: 0;
   }
 .tutup {
-	z-index: 98;
+	z-index: 104;
 	position: fixed;
 	margin: auto;
 	width: 10px;
 	height: 10px;
   }
 .free {
-	z-index: 94;
+	z-index: 101;
 	position: fixed;
 	margin: auto;
 	width: 350px;
@@ -122,7 +123,7 @@ table {
 	border: 0.5px solid rgb(175, 175, 175);
   }
 #tutupp {
-	z-index: 95;
+	z-index: 102;
 	position: fixed;
 	margin: auto;
 	width: 350px;
@@ -132,14 +133,14 @@ table {
 	right: 0;
   }
 .tutupp {
-	z-index: 95;
+	z-index: 102;
 	position: fixed;
 	margin: auto;
 	width: 10px;
 	height: 10px;
   }
 .bg_promo {
-	z-index: 93;
+	z-index: 100;
 	position: fixed;
 	margin: auto;
 	width: 360px;
@@ -149,8 +150,172 @@ table {
 	left: 0;
 	right: 0; 
 	backdrop-filter: blur(8px);
+	-webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
 	visibility: visible;
 	margin-top: -24px;
+  }
+  #tab3 {
+	z-index: 97;
+	position: fixed;
+	margin: 0;
+	width: 360px;
+	left: 0;
+	right: 0;
+	visibility: visible;
+  }
+  .openmenu {
+	z-index: 98;
+	position: fixed;
+	margin: auto;
+	width: 360px;
+	height: 40.328px;
+	left: 0;
+	right: 0;
+	/* background-color: blueviolet; */
+	opacity: 0.5;
+	/* margin-top: -23px; */
+  }
+  .openmenu2 {
+	z-index: 99;
+	position: fixed;
+	margin: auto;
+	width: 360px;
+	height: 40.328px;
+	left: 0;
+	right: 0;
+	/* background-color: rgb(255, 59, 52); */
+	opacity: 0.5;
+	visibility: hidden;
+  }
+  .menu {
+	width: 24px;
+	height: 18px;
+    margin: auto;
+	/* background-color: aqua; */
+	margin-top: 11px;
+	margin-left: 15px;
+}
+.menu2 {
+	width: 24px;
+	height: 18px;
+    margin: auto;
+	/* background-color: rgb(229, 255, 0); */
+	margin-top: 11px;
+	margin-left: 15px;
+}
+.text {
+	font-size: 13px;
+	color: rgb(153, 153, 153);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+}
+.up {
+	width: 360px;
+    z-index: 97;
+    margin: auto;
+    position: fixed;
+	left: 0;
+	right: 0;
+}
+.isimenu {
+	width: 360px;
+	height: 72px;
+    z-index: 96;
+    margin: auto;
+    position: fixed;
+	background-color: rgb(252, 252, 252);
+	margin-top: 38px;
+	visibility: hidden;
+	left: 0;
+	right: 0;
+}
+.company {
+	width: 310px;
+	height: 20px;
+	opacity: 0.5;
+	margin-top: 10px;
+	text-align: center;
+	border-bottom: 0.2px solid rgb(219, 219, 219);
+	margin-left: 25px;
+}
+.layanan {
+	width: 310px;
+	height: 20px;
+	opacity: 0.5;
+	text-align: center;
+	border-bottom: 0.2px solid rgb(219, 219, 219);
+	margin-left: 25px;
+}
+.kontak {
+	width: 310px;
+	height: 20px;
+	opacity: 0.5;
+	text-align: center;
+	margin-left: 25px;
+}
+.buka3:checked ~ .isimenu {
+	-webkit-animation : tutup6;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease;
+  }
+.buka3:checked ~ .openmenu2 {
+	-webkit-animation : tutup8;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease;
+  }
+.buka3:checked ~ .openmenu {
+	-webkit-animation : tutup7;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease;
+  }
+@-webkit-keyframes tutup6 {
+	0% {
+	visibility: hidden;
+	}
+	5% {
+	visibility: hidden;
+	}
+	6% {
+	visibility: visible;
+	}
+	100% {
+	visibility: visible;
+	}
+}
+@-webkit-keyframes tutup8 {
+	0% {
+	visibility: hidden;
+	}
+	5% {
+	visibility: hidden;
+	}
+	6% {
+	visibility: visible;
+	}
+	100% {
+	visibility: visible;
+	}
+}
+@-webkit-keyframes tutup7 {
+	0% {
+	visibility: visible;
+	}
+	5% {
+		visibility: visible;
+		}
+	6% {
+		visibility: hidden;
+		}
+	100% {
+		visibility: hidden;
+		}
   }
 .buka1:checked ~ .welcome {
   -webkit-animation : tutup1;
@@ -182,8 +347,8 @@ table {
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease;
   }
-.tutup1, .tutup2, .buka11, .buka22, .buka1, .buka2 {
-display: none;
+.tutup1, .tutup2, .buka11, .buka22, .buka1, .buka2, .buka3, .tutup3, .buka33 {
+	display: none;
 }
 @-webkit-keyframes tutup1 {
   0% {
@@ -379,12 +544,6 @@ body {
 .head1, .ba1, .left, .right, .contact, .info, .media, .event, .award, .timur1, .timur2, .doctor1, .doctor2 {
 	z-index: 3;
 }
-.up {
-	width: 360px;
-    z-index: 99;
-    margin: auto;
-    position: fixed;
-}
 .head {
 	width: 360px;
 	height: 241.53px;
@@ -420,20 +579,23 @@ body {
 }
 .beaf {
 	width: 260px;
-	height: 288.92px;
+	height: 228.7px;
     position: absolute;
-	margin-top: 97px;
+	margin-top: 87px;
 	margin-left: 50px;
+	box-shadow: 0 0 10px rgb(202, 202, 202);
 }
 .beaf_kiri {
-	margin-top: -65px;
+	margin-top: -10px;
 	margin-left: -45px;
 	filter: invert(100%);
+	height: 228.7px;
 }
 .beaf_kanan {
-	margin-top: -65px;
+	margin-top: -10px;
 	margin-right: -45px;
 	filter: invert(100%);
+	height: 228.7px;
 }
 /* .ba1 {
 	filter: grayscale(100%);
@@ -456,71 +618,74 @@ body {
 .contact {
 	width: 108px;
 	position: absolute;
-	margin-top: -30px;
+	margin-top: 40px;
 	margin-left: 126px;
+	z-index: 5;
+	box-shadow: 0 0 6px rgb(228, 228, 228);
+	border-radius: 14px;
 }
 .info {
-	width: 171px;
+	width: 161px;
 	position: absolute;
-	margin-top: 63px;
-	margin-left: 161px;
+	margin-top: 133px;
+	margin-left: 151px;
 }
 .media {
 	width: 212px;
 	position: absolute;
-	margin-top: 464px;
+	margin-top: 531px;
 	margin-left: 74px;
 }
 .left1 {
 	width: 11px;
 	position: absolute;
-	margin-top: 570px;
+	margin-top: 653px;
 	margin-left: 70px;
 }
 .right1 {
 	width: 11px;
 	position: absolute;
-	margin-top: 570px;
+	margin-top: 657px;
 	margin-left: 280px;
 }
 .event {
 	width: 268px;
 	position: absolute;
-	margin-top: 813px;
+	margin-top: 881px;
 	margin-left: 46px;
 }
 .left2 {
 	width: 11px;
 	position: absolute;
-	margin-top: 928px;
+	margin-top: 996px;
 	margin-left: 45px;
 }
 .right2 {
 	width: 11px;
 	position: absolute;
-	margin-top: 928px;
+	margin-top: 996px;
 	margin-left: 305px;
 }
 .award {
 	width: 268px;
 	position: absolute;
-	margin-top: 1171px;
+	margin-top: 1239px;
 	margin-left: 46px;
 }
 .left3 {
 	width: 11px;
 	position: absolute;
-	margin-top: 1290px;
+	margin-top: 1358px;
 	margin-left: 45px;
 }
 .right3 {
 	width: 11px;
 	position: absolute;
-	margin-top: 1290px;
+	margin-top: 1358px;
 	margin-left: 305px;
 }
 .timur {
-	margin-top: 1560px;
+	margin-top: 1628px;
 	width: 360px;
 	height: 241.53px;
     margin: auto;
@@ -530,27 +695,27 @@ body {
 .timur_kanan {
 	width: 360px;
 	height: 241.53px;
-	margin-top: 1640px;
+	margin-top: 1708px;
 }
 .timur_kiri {
 	width: 360px;
 	height: 241.53px;
-	margin-top: 1640px;
+	margin-top: 1708px;
 }
 .timur1 {
-	margin-top: 1560px;
+	margin-top: 1628px;
 	width: 360px;
 }
 .timur2 {
-	margin-top: 1560px;
+	margin-top: 1628px;
 	width: 360px;
 }
 .timur3 {
-	margin-top: 1560px;
+	margin-top: 1628px;
 	width: 360px;
 }
 .barat {
-	margin-top: 2082px;
+	margin-top: 2150px;
 	width: 360px;
 	height: 241.53px;
     position: absolute;
@@ -560,23 +725,23 @@ body {
 .barat_kanan {
 	width: 360px;
 	height: 241.53px;
-	margin-top: 1922px;
+	margin-top: 1990px;
 }
 .barat_kiri {
 	width: 360px;
 	height: 241.53px;
-	margin-top: 1922px;
+	margin-top: 1990px;
 }
 .barat1 {
-	margin-top: 1842px;
+	margin-top: 1910px;
 	width: 360px;
 }
 .barat2 {
-	margin-top: 1842px;
+	margin-top: 1910px;
 	width: 360px;
 }
 .barat3 {
-	margin-top: 1842px;
+	margin-top: 1910px;
 	width: 360px;
 }
 /* .timur1 {
@@ -592,13 +757,13 @@ body {
 .doctor1 {
 	width: 259px;
 	position: absolute;
-	margin-top: 2146px;
+	margin-top: 2214px;
 	margin-left: 50px;
 }
 .doctor2 {
 	width: 259px;
 	position: absolute;
-	margin-top: 2445px;
+	margin-top: 2513px;
 	margin-left: 50px;
 }
 #contact {
@@ -606,7 +771,7 @@ body {
 	height: 210px;
 	/* background-color: aqua; */
 	position: absolute;
-	margin-top: 3476px;
+	margin-top: 3544px;
 	opacity: 0.5;
 }
 .timurwa {
@@ -614,7 +779,7 @@ body {
 	height: 12px;
 	/* background-color: blue; */
 	position: absolute;
-	margin-top: 80px;
+	margin-top: 82px;
 	margin-left: 195px;
 	opacity: 0.5;
 }
@@ -623,7 +788,43 @@ body {
 	height: 12px;
 	/* background-color: blue; */
 	position: absolute;
-	margin-top: 135px;
+	margin-top: 137px;
 	margin-left: 192px;
 	opacity: 0.5;
+}
+
+
+
+
+
+/* sooon */
+.page2 {
+	z-index: 1;
+	position: absolute;
+	width: 360px;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: rgb(232, 244, 255);
+}
+.soon {
+	text-align: center;
+	font-size: 30px;
+	color: rgb(180, 211, 240);
+	padding-top: 50%;
+}
+
+
+
+
+
+/* allll */
+.atext {
+	text-decoration: none;
+}
+a {
+	text-decoration: none;
 }
