@@ -149,12 +149,7 @@ table {
 	opacity: 50%; */
 	left: 0;
 	right: 0; 
-	backdrop-filter: blur(8px);
 	-webkit-filter: blur(8px);
-    -moz-filter: blur(8px);
-    -o-filter: blur(8px);
-    -ms-filter: blur(8px);
-    filter: blur(8px);
 	-webkit-backdrop-filter: blur(8px);
 	visibility: visible;
 	margin-top: -24px;
