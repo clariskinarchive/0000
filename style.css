@@ -155,6 +155,7 @@ table {
     -o-filter: blur(8px);
     -ms-filter: blur(8px);
     filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
 	visibility: visible;
 	margin-top: -24px;
   }
